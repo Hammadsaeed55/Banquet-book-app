@@ -1,4 +1,5 @@
 # Banquit-book-app
+
 banquit booking application using mern Stack.
 <br>
-auther : Hammad saeed
+auther : Hammad bin saeed
