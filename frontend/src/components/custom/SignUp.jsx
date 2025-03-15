@@ -11,13 +11,13 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Basic validation: Check if passwords match
+    
     if (password !== confirmPassword) {
       setError("Passwords do not match");
       return;
     }
     setError("");
-    // Implement sign-up logic here
+ 
     console.log("Signing up:", { fullName, email, phone, address });
   };
 

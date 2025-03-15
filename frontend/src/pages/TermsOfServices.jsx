@@ -3,7 +3,7 @@ import React from "react";
 const TermsOfServices = () => {
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
+     
       <div
         className="relative h-64 bg-cover bg-center"
         style={{ backgroundImage: 'url("https://source.unsplash.com/1600x900/?terms,services")' }}
@@ -17,9 +17,9 @@ const TermsOfServices = () => {
         </div>
       </div>
 
-      {/* Content Section */}
+    
       <div className="max-w-5xl mx-auto py-12 px-4">
-        {/* Acceptance of Terms */}
+        
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Acceptance of Terms</h2>
           <p className="text-gray-700 leading-relaxed">
@@ -28,7 +28,7 @@ const TermsOfServices = () => {
           </p>
         </section>
 
-        {/* Services Provided */}
+        
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Services Provided</h2>
           <p className="text-gray-700 leading-relaxed">
@@ -37,7 +37,7 @@ const TermsOfServices = () => {
           </p>
         </section>
 
-        {/* User Responsibilities */}
+        
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">User Responsibilities</h2>
           <p className="text-gray-700 leading-relaxed">
@@ -46,7 +46,7 @@ const TermsOfServices = () => {
           </p>
         </section>
 
-        {/* Changes to Terms */}
+        
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Changes to Terms</h2>
           <p className="text-gray-700 leading-relaxed">
@@ -56,7 +56,7 @@ const TermsOfServices = () => {
           </p>
         </section>
 
-        {/* Contact Information */}
+        
         <section>
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Contact Information</h2>
           <p className="text-gray-700 leading-relaxed">

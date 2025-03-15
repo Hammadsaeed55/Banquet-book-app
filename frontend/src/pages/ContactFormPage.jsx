@@ -8,7 +8,7 @@ const ContactFormPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Implement your form submission logic here
+    
     console.log("Submitted:", { name, email, subject, message });
   };
 
@@ -28,7 +28,7 @@ const ContactFormPage = () => {
         </div>
       </div>
 
-      {/* Contact Form */}
+      
       <div className="flex-grow bg-gray-50 dark:bg-gray-800 py-12 px-4">
         <div className="max-w-3xl mx-auto bg-white dark:bg-gray-900 shadow-lg rounded-lg p-8">
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white text-center mb-6">

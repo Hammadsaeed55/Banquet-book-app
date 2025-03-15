@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 shadow-md py-4 px-6 transition-all">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         
-        {/* Logo */}
+      
         <div className="text-2xl font-extrabold text-gray-800 dark:text-white tracking-wide">
           <span className="text-blue-600">Banquet</span> Finder
         </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
             Terms of Service
           </Link>
 
-          {/* Buttons & Mode Toggle */}
+        
           <button className="px-4 py-2 text-blue-600 dark:text-white border border-blue-600 dark:border-white rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 transition">
             Login
           </button>

@@ -17,7 +17,7 @@ const images = [
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto slide every 4 seconds
+ 
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
@@ -64,7 +64,7 @@ const Carousel = () => {
         <ChevronRight size={24} />
       </button>
 
-      {/* Dots Navigation */}
+      
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <button

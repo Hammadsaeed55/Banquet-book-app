@@ -3,7 +3,7 @@ import React from "react";
 const PrivacyPolicy = () => {
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
+      
       <div
         className="relative h-64 bg-cover bg-center mt-8"
         style={{ backgroundImage: 'url("https://source.unsplash.com/1600x900/?privacy,policy")' }}
@@ -17,9 +17,9 @@ const PrivacyPolicy = () => {
         </div>
       </div>
 
-      {/* Content Section */}
+    
       <div className="max-w-4xl mx-auto py-12 px-4">
-        {/* Introduction */}
+      
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Introduction</h2>
           <p className="text-gray-700 leading-relaxed">
@@ -27,7 +27,7 @@ const PrivacyPolicy = () => {
           </p>
         </section>
 
-        {/* Information We Collect */}
+       
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Information We Collect</h2>
           <p className="text-gray-700 leading-relaxed">
@@ -35,7 +35,7 @@ const PrivacyPolicy = () => {
           </p>
         </section>
 
-        {/* How We Use Your Information */}
+        
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">How We Use Your Information</h2>
           <p className="text-gray-700 leading-relaxed">
@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
           </p>
         </section>
 
-        {/* Sharing Your Information */}
+        
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Sharing Your Information</h2>
           <p className="text-gray-700 leading-relaxed">
@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
           </p>
         </section>
 
-        {/* Data Security */}
+        
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Data Security</h2>
           <p className="text-gray-700 leading-relaxed">
@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
           </p>
         </section>
 
-        {/* Changes to This Policy */}
+    
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Changes to This Policy</h2>
           <p className="text-gray-700 leading-relaxed">
@@ -67,7 +67,7 @@ const PrivacyPolicy = () => {
           </p>
         </section>
 
-        {/* Contact Us */}
+       
         <section>
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
           <p className="text-gray-700 leading-relaxed">

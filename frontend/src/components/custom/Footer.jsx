@@ -19,13 +19,13 @@ const Footer = () => {
     <footer className=" w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 py-10 mt-auto">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
 
-        {/* Logo & About */}
+     
         <div>
           <h2 className="text-2xl font-bold text-blue-500">Banquet Finder</h2>
           <p className="mt-3 text-gray-600 dark:text-gray-400">
             Find and book the perfect banquet hall for your special occasions.
           </p>
-          {/* Contact Info */}
+         
           <div className="mt-4 space-y-2 text-gray-600 dark:text-gray-400">
             <div className="flex items-center space-x-2">
               <Phone size={18} />
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Quick Links */}
+       
         <div>
           <h3 className="text-lg font-semibold">Quick Links</h3>
           <ul className="mt-3 space-y-2 text-gray-600 dark:text-gray-400">
@@ -54,7 +54,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Our Services */}
+      
         <div>
           <h3 className="text-lg font-semibold">Our Services</h3>
           <ul className="mt-3 space-y-2 text-gray-600 dark:text-gray-400">
@@ -67,7 +67,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Newsletter & Theme Toggle */}
+       
         <div>
           <h3 className="text-lg font-semibold">Subscribe to Our Newsletter</h3>
           <div className="mt-3 flex">
@@ -81,7 +81,7 @@ const Footer = () => {
             </button>
           </div>
 
-          {/* Social Media */}
+        
           <div className="mt-6">
             <h3 className="text-lg font-semibold">Follow Us</h3>
             <div className="flex space-x-4 mt-3 text-gray-600 dark:text-gray-400">
@@ -92,7 +92,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Dark Mode Toggle */}
+         
           <div className="mt-6">
             <button
               onClick={toggleTheme}
@@ -105,7 +105,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright */}
+    
       <div className="mt-10 text-center text-gray-500 text-sm border-t border-gray-300 dark:border-gray-700 pt-5">
         © {new Date().getFullYear()} Banquet Finder. All Rights Reserved.
       </div>
