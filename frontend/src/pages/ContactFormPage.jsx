@@ -45,7 +45,7 @@ const ContactFormPage = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Your name"
-                  className="mt-1 w-full border border-gray-300 dark:border-gray-700 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                  className="mt-1 w-full  dark:text-gray-900 border border-gray-300 dark:border-gray-700 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
                   required
                 />
               </div>
@@ -58,7 +58,7 @@ const ContactFormPage = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="you@example.com"
-                  className="mt-1 w-full border border-gray-300 dark:border-gray-700 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                  className="mt-1 w-full border  dark:text-gray-900 border-gray-300 dark:border-gray-700 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
                   required
                 />
               </div>
@@ -72,7 +72,7 @@ const ContactFormPage = () => {
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
                 placeholder="Subject"
-                className="mt-1 w-full border border-gray-300 dark:border-gray-700 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                className="mt-1 w-full border border-gray-300 dark:border-gray-700 dark:text-gray-900 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
                 required
               />
             </div>
@@ -85,14 +85,14 @@ const ContactFormPage = () => {
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Your message"
                 rows="5"
-                className="mt-1 w-full border border-gray-300 dark:border-gray-700 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                className="mt-1 dark:text-gray-900 w-full border border-gray-300 dark:border-gray-700 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
                 required
               ></textarea>
             </div>
             <div className="text-center">
               <button
                 type="submit"
-                className="w-full sm:w-auto py-2 px-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md transition-colors"
+                className="w-full  dark:text-gray-900 sm:w-auto py-2 px-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md transition-colors"
               >
                 Send Message
               </button>

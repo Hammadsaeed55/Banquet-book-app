@@ -11,7 +11,10 @@ import AboutUs from "./pages/AboutUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfServices from "./pages/TermsOfServices";
 import ContactFormPage from "./pages/ContactFormPage";
-
+// import AddToCart from "./components/custom/AddToCart";
+import NotFount from "./components/custom/NotFount";
+import AdminDashboardNavbar from "./components/custom/AdminDashboardNavbar";
+import CreateBanquet from "./components/custom/CreateBanquet";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -42,6 +45,14 @@ const App = () => {
           <Navbar />
           <Login />
           <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/*",
+      element: (
+        <>
+          <NotFount />
         </>
       ),
     },
@@ -85,7 +96,24 @@ const App = () => {
         </>
       ),
     },
-    
+    {
+      path: "/admin/dashboard",
+      element: (
+        <>
+          <AdminDashboardNavbar />
+          <CreateBanquet />
+        </>
+      ),
+    },
+    {
+      path: "/admin/dashboard/createbanquet",
+      element: (
+        <>
+          <AdminDashboardNavbar />
+          <CreateBanquet />
+        </>
+      ),
+    },
   ]);
 
   return (

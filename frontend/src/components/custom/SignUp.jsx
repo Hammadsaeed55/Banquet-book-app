@@ -1,4 +1,9 @@
-import React, { useState } from "react";
+import React, {  useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const SignUp = () => {
   const [fullName, setFullName] = useState("");
@@ -9,17 +14,54 @@ const SignUp = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const navigate = useNavigate();
+
+  const handleSubmit = async(e) => {
     e.preventDefault();
     
     if (password !== confirmPassword) {
-      setError("Passwords do not match");
+      toast.error("Password does not match")
       return;
     }
+
     setError("");
  
     console.log("Signing up:", { fullName, email, phone, address });
+
+    try{
+    const res = await axios.post(`http://localhost:8080/api/auth/register`,{
+      name:fullName,
+      email:email,
+      phone:phone,
+      address:address,
+      password:password,
+    })
+    console.log(res.data.message);
+    toast.success(res.data.message);
+    setTimeout(()=>{
+      navigate("/");
+    },2000)
+    setAddress("")
+    setEmail("")
+    setFullName("");
+    setPassword("")
+    setConfirmPassword("")
+    setPhone("");
+  }
+  catch(error){
+    console.error("Registration error:", error);
+
+    // Check if error response exists and show message
+    if (error.response) {
+      toast.error(error.response.data.message || "Something went wrong!");
+    } else if (error.request) {
+      toast.error("No response from server. Please try again later.");
+    } else  {
+      toast.error("User Already exist.");
+    }
+  }
   };
+
 
   return (
     <div className="flex justify-center items-center  min-h-screen bg-gray-100 dark:bg-black">
@@ -140,11 +182,12 @@ const SignUp = () => {
         </form>
         <p className="mt-6 text-center text-gray-600 dark:text-gray-300">
           Already have an account?{" "}
-          <a href="#" className="text-blue-600 hover:underline">
+          <Link to="/Login" href="#" className="text-blue-600 hover:underline">
             Log In
-          </a>
+          </Link>
         </p>
       </div>
+      <ToastContainer position="top-center" autoClose={1000} />
     </div>
   );
 };
