@@ -39,7 +39,7 @@ const SignUp = () => {
     console.log(res.data.message);
     toast.success(res.data.message);
     setTimeout(()=>{
-      navigate("/");
+      navigate("/Login");
     },2000)
     setAddress("")
     setEmail("")
